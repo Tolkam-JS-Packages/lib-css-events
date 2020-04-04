@@ -4,5 +4,8 @@
     "description": "Gets element animation/transition info and event data",
     "main": "src/index.ts",
     "license": "UNLICENSED",
-    "private": true
+    "private": true,
+    "devDependencies": {
+        "tslib": "^1.10.0"
+    }
 }

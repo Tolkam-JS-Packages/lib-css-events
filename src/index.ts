@@ -23,7 +23,7 @@ function getElementInfo(element: Element) {
             duration: parse(getPropertyValue(prop + '-duration')),
             delay: parse(getPropertyValue(prop + '-delay')),
             timingFunction: getPropertyValue(prop + '-timing-function'),
-        }
+        };
 
         if (prop === TRANSITION) {
             info[prop].property = getPropertyValue(prop + '-property');
@@ -96,12 +96,12 @@ function getLongestDuration(element: HTMLElement) {
  * Sets element classes and calls callbacks on transition/animation end
  *
  * @param {HTMLElement} element
- * @param {{[p: string]: Function | null}} classesMap
+ * @param classesMap
  * @param {Function} done
  */
 function setClasses(element: HTMLElement, classesMap: {[p: string]: TClassCallback}, done?: () => any) {
 
-    let timeoutId: number;
+    let timeoutId: any;
     const classNames: string[] = [];
     const callbacks: TClassCallback[] = [];
 
