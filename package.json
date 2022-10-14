@@ -1,6 +1,7 @@
 {
     "name": "@tolkam/lib-css-events",
     "description": "Gets element animation/transition info and event data",
+    "version": "0.0.0",
     "browser": "src/index.ts",
     "types": "src/index.ts",
     "license": "UNLICENSED",
